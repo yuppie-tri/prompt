@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ===============================================
 async function loadPrompts() {
     try {
-        const response = await fetch('../prompts.json');
+        const response = await fetch('./prompts.json');
         const data = await response.json();
         allPrompts = data.prompts;
         
