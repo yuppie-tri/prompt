@@ -95,13 +95,22 @@ function createPromptCard(prompt) {
     const card = document.createElement('div');
     card.className = 'prompt-card';
     card.setAttribute('data-category', prompt.category);
+    card.setAttribute('data-prompt-id', prompt.id);
+    
+    // Clean text for preview - replace multiple newlines with space
+    let previewText = prompt.text.replace(/\n+/g, ' ').trim();
     
     card.innerHTML = `
         <div class="prompt-number">${prompt.id}</div>
         <h3>${prompt.title}</h3>
         <p class="prompt-category">${prompt.categoryName}</p>
-        <p class="prompt-text">${prompt.text}</p>
+        <p class="prompt-text">${previewText}</p>
     `;
+    
+    // Add click event to show modal
+    card.addEventListener('click', function() {
+        showPromptModal(prompt);
+    });
     
     return card;
 }
@@ -398,6 +407,144 @@ function initializePageFeatures() {
             link.classList.remove('active');
         }
     });
+}
+
+// ===============================================
+// Prompt Modal Functions
+// ===============================================
+
+function showPromptModal(prompt) {
+    const modal = document.getElementById('promptModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalPromptNumber = document.getElementById('modalPromptNumber');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalText = document.getElementById('modalText');
+    
+    if (!modal) return;
+    
+    // Populate modal with prompt data
+    modalTitle.textContent = prompt.title;
+    modalPromptNumber.textContent = prompt.id;
+    modalCategory.textContent = prompt.categoryName;
+    modalText.textContent = prompt.text;
+    
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    
+    // Setup modal close handlers
+    setupModalCloseHandlers(modal, prompt);
+}
+
+function setupModalCloseHandlers(modal, prompt) {
+    const closeBtn = document.getElementById('modalClose');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const copyPromptBtn = document.getElementById('copyPromptBtn');
+    
+    // Close on X button
+    if (closeBtn) {
+        closeBtn.onclick = function() {
+            closeModal(modal);
+        };
+    }
+    
+    // Close on "Đóng" button
+    if (closeModalBtn) {
+        closeModalBtn.onclick = function() {
+            closeModal(modal);
+        };
+    }
+    
+    // Copy prompt functionality
+    if (copyPromptBtn) {
+        copyPromptBtn.onclick = function() {
+            copyPromptToClipboard(prompt);
+        };
+    }
+    
+    // Close on clicking outside modal content
+    modal.onclick = function(event) {
+        if (event.target === modal) {
+            closeModal(modal);
+        }
+    };
+    
+    // Close on Escape key
+    const escapeHandler = function(event) {
+        if (event.key === 'Escape') {
+            closeModal(modal);
+            document.removeEventListener('keydown', escapeHandler);
+        }
+    };
+    document.addEventListener('keydown', escapeHandler);
+}
+
+function closeModal(modal) {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+}
+
+function copyPromptToClipboard(prompt) {
+    const textToCopy = `${prompt.title}\n\n${prompt.text}`;
+    
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(textToCopy)
+            .then(() => {
+                showCopyNotification('success');
+            })
+            .catch(err => {
+                console.error('Failed to copy:', err);
+                fallbackCopyTextToClipboard(textToCopy);
+            });
+    } else {
+        fallbackCopyTextToClipboard(textToCopy);
+    }
+}
+
+function fallbackCopyTextToClipboard(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.top = '0';
+    textArea.style.left = '0';
+    textArea.style.opacity = '0';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            showCopyNotification('success');
+        } else {
+            showCopyNotification('error');
+        }
+    } catch (err) {
+        console.error('Fallback copy failed:', err);
+        showCopyNotification('error');
+    }
+    
+    document.body.removeChild(textArea);
+}
+
+function showCopyNotification(status) {
+    const copyBtn = document.getElementById('copyPromptBtn');
+    if (!copyBtn) return;
+    
+    const originalText = copyBtn.textContent;
+    
+    if (status === 'success') {
+        copyBtn.textContent = '✅ Đã copy!';
+        copyBtn.style.background = '#28a745';
+    } else {
+        copyBtn.textContent = '❌ Lỗi copy';
+        copyBtn.style.background = '#dc3545';
+    }
+    
+    setTimeout(() => {
+        copyBtn.textContent = originalText;
+        copyBtn.style.background = '';
+    }, 2000);
 }
 
 console.log('YUP Website loaded successfully! 🚀');
