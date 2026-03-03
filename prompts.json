@@ -1,0 +1,354 @@
+{
+  "prompts": [
+    {
+      "id": 1,
+      "title": "Email Chào Hàng B2B",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Viết email chào hàng chuyên nghiệp gửi đến doanh nghiệp [tên ngành] giới thiệu sản phẩm/dịch vụ [mô tả ngắn gọn]. Email cần ngắn gọn, tập trung vào lợi ích khách hàng và có call-to-action rõ ràng."
+    },
+    {
+      "id": 2,
+      "title": "Script Gọi Điện Tư Vấn",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Tạo kịch bản gọi điện tư vấn cho khách hàng tiềm năng về [sản phẩm/dịch vụ]. Bao gồm: mở đầu, xác định nhu cầu, giới thiệu giải pháp và kết thúc cuộc gọi."
+    },
+    {
+      "id": 3,
+      "title": "Câu Hỏi Khai Thác Nhu Cầu",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Liệt kê 15 câu hỏi mở để khai thác nhu cầu khách hàng trong lĩnh vực [tên lĩnh vực]. Câu hỏi cần giúp hiểu sâu pain points và mong muốn của khách hàng."
+    },
+    {
+      "id": 4,
+      "title": "Xử Lý Từ Chối",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Đưa ra 10 cách ứng phó hiệu quả khi khách hàng nói \"Tôi cần suy nghĩ thêm\" hoặc \"Giá cao quá\". Trọng tâm là giữ chân khách và tạo cơ hội tiếp theo."
+    },
+    {
+      "id": 5,
+      "title": "Follow-up Sau Gặp Mặt",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Viết email follow-up sau buổi gặp mặt với khách hàng [tên công ty]. Nhấn mạnh những điểm chính đã thảo luận và đề xuất bước tiếp theo."
+    },
+    {
+      "id": 6,
+      "title": "Đề Xuất Thương Mại",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Soạn đề xuất thương mại cho dự án [mô tả dự án] với ngân sách [số tiền]. Bao gồm: tóm tắt, giải pháp, lợi ích, timeline và bảng giá."
+    },
+    {
+      "id": 7,
+      "title": "Upselling Script",
+      "category": "sales",
+      "categoryName": "Sales",
+      "text": "Tạo kịch bản upselling/cross-selling cho khách hàng hiện tại. Giới thiệu sản phẩm/gói dịch vụ cao cấp hơn một cách tự nhiên và có giá trị."
+    },
+    {
+      "id": 8,
+      "title": "Chiến Dịch Facebook Ads",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Lập kế hoạch chiến dịch Facebook Ads cho sản phẩm [tên sản phẩm] với mục tiêu [conversion/awareness]. Bao gồm: đối tượng mục tiêu, thông điệp, ngân sách và KPI."
+    },
+    {
+      "id": 9,
+      "title": "Landing Page Conversion",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Viết nội dung landing page tối ưu cho chuyển đổi cho [sản phẩm/dịch vụ]. Bao gồm: headline hấp dẫn, benefits, social proof và CTA mạnh mẽ."
+    },
+    {
+      "id": 10,
+      "title": "Email Marketing Campaign",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Xây dựng chuỗi 5 email marketing cho [mục đích: nurture leads/onboarding/promotion]. Mỗi email có chủ đề rõ ràng và phù hợp customer journey."
+    },
+    {
+      "id": 11,
+      "title": "SEO Keyword Research",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Gợi ý 30 từ khóa SEO cho website bán [sản phẩm/dịch vụ] tại thị trường Việt Nam. Phân loại theo search intent: informational, navigational, transactional."
+    },
+    {
+      "id": 12,
+      "title": "Influencer Marketing",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Thiết kế chiến dịch hợp tác với influencer cho thương hiệu [tên thương hiệu]. Xác định: loại influencer phù hợp, brief nội dung và cách đo lường ROI."
+    },
+    {
+      "id": 13,
+      "title": "Viral Marketing Ideas",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Đề xuất 10 ý tưởng marketing có tiềm năng viral cho [ngành hàng]. Tập trung vào yếu tố cảm xúc, chia sẻ và tương tác cao."
+    },
+    {
+      "id": 14,
+      "title": "Brand Story",
+      "category": "marketing",
+      "categoryName": "Marketing",
+      "text": "Viết câu chuyện thương hiệu cảm động cho [tên thương hiệu]. Bao gồm: nguồn gốc, giá trị cốt lõi, sứ mệnh và tầm nhìn tương lai."
+    },
+    {
+      "id": 15,
+      "title": "Blog Post SEO-Friendly",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Viết outline cho bài blog 2000 từ về chủ đề [chủ đề] tối ưu SEO. Bao gồm: tiêu đề hấp dẫn, các phần chính, từ khóa liên quan và meta description."
+    },
+    {
+      "id": 16,
+      "title": "Social Media Calendar",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Tạo lịch đăng bài mạng xã hội cho 1 tháng cho thương hiệu [tên thương hiệu]. Bao gồm: chủ đề, format (video/image/text), thời gian đăng và caption."
+    },
+    {
+      "id": 17,
+      "title": "Video Script YouTube",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Viết kịch bản video YouTube 10 phút về [chủ đề]. Bao gồm: hook đầu video, nội dung chính, ví dụ minh họa và call-to-action cuối video."
+    },
+    {
+      "id": 18,
+      "title": "Infographic Ideas",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Đề xuất 5 ý tưởng infographic về [lĩnh vực]. Mỗi ý tưởng bao gồm: tiêu đề, các thống kê/dữ liệu chính và cách trình bày trực quan."
+    },
+    {
+      "id": 19,
+      "title": "Case Study Template",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Viết case study về dự án thành công với khách hàng [tên khách hàng]. Cấu trúc: thách thức, giải pháp, kết quả đạt được (có số liệu cụ thể)."
+    },
+    {
+      "id": 20,
+      "title": "Newsletter Content",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Viết newsletter hàng tuần cho [đối tượng độc giả]. Bao gồm: tin tức ngành, tips hữu ích, featured content và kêu gọi hành động."
+    },
+    {
+      "id": 21,
+      "title": "Podcast Episode Outline",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Tạo outline cho tập podcast 30 phút về [chủ đề]. Bao gồm: giới thiệu, các câu hỏi chính, segment và kết thúc."
+    },
+    {
+      "id": 22,
+      "title": "Ebook Chapter Structure",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Xây dựng cấu trúc ebook về [chủ đề] với 10 chương. Mỗi chương có: tiêu đề hấp dẫn, nội dung chính và takeaways."
+    },
+    {
+      "id": 23,
+      "title": "Testimonial Request",
+      "category": "content",
+      "categoryName": "Content",
+      "text": "Viết email đề nghị khách hàng hài lòng để lại testimonial/review. Làm cho việc này dễ dàng và hấp dẫn cho khách hàng."
+    },
+    {
+      "id": 24,
+      "title": "Ý Tưởng Sản Phẩm Mới",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Brainstorm 20 ý tưởng sản phẩm/dịch vụ mới cho thị trường [tên thị trường]. Đánh giá mỗi ý tưởng theo tiêu chí: tính khả thi, nhu cầu thị trường và khả năng sinh lời."
+    },
+    {
+      "id": 25,
+      "title": "Giải Pháp Cho Vấn Đề",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Áp dụng phương pháp SCAMPER để tìm giải pháp cho vấn đề [mô tả vấn đề]. Đưa ra ít nhất 3 giải pháp sáng tạo và khả thi."
+    },
+    {
+      "id": 26,
+      "title": "Tên Thương Hiệu",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Gợi ý 50 tên thương hiệu cho [loại hình kinh doanh]. Tên cần: dễ nhớ, có ý nghĩa, phát âm dễ dàng và tên miền .vn còn trống."
+    },
+    {
+      "id": 27,
+      "title": "Slogan Sáng Tạo",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Tạo 30 slogan cho thương hiệu [tên thương hiệu] hoạt động trong lĩnh vực [lĩnh vực]. Slogan cần ngắn gọn, ấn tượng và truyền tải giá trị cốt lõi."
+    },
+    {
+      "id": 28,
+      "title": "Event Marketing Ideas",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Đề xuất 15 ý tưởng tổ chức sự kiện để quảng bá thương hiệu [tên thương hiệu]. Bao gồm: format, đối tượng tham gia và hoạt động chính."
+    },
+    {
+      "id": 29,
+      "title": "Partnership Opportunities",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Brainstorm các cơ hội hợp tác chiến lược cho doanh nghiệp [tên doanh nghiệp]. Xác định đối tác tiềm năng và lợi ích win-win."
+    },
+    {
+      "id": 30,
+      "title": "Innovation Workshop",
+      "category": "brainstorming",
+      "categoryName": "Brainstorming",
+      "text": "Thiết kế workshop 3 giờ để khơi gợi sáng tạo và đổi mới cho team. Bao gồm: agenda, activities và các kỹ thuật brainstorming hiệu quả."
+    },
+    {
+      "id": 31,
+      "title": "Phân Tích SWOT",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Thực hiện phân tích SWOT chi tiết cho doanh nghiệp [tên doanh nghiệp] trong ngành [ngành]. Đưa ra khuyến nghị chiến lược dựa trên phân tích."
+    },
+    {
+      "id": 32,
+      "title": "Kế Hoạch Kinh Doanh 1 Năm",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Xây dựng kế hoạch kinh doanh 1 năm cho [loại hình kinh doanh]. Bao gồm: mục tiêu, chiến lược, kế hoạch hành động và KPI cho từng quý."
+    },
+    {
+      "id": 33,
+      "title": "Go-to-Market Strategy",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Thiết kế chiến lược go-to-market cho sản phẩm mới [tên sản phẩm]. Bao gồm: phân khúc khách hàng, positioning, kênh phân phối và pricing."
+    },
+    {
+      "id": 34,
+      "title": "Competitive Analysis",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Phân tích 5 đối thủ cạnh tranh chính trong ngành [tên ngành]. So sánh: sản phẩm, giá cả, marketing, thế mạnh và điểm yếu."
+    },
+    {
+      "id": 35,
+      "title": "Pricing Strategy",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Đề xuất 3 mô hình định giá khác nhau cho [sản phẩm/dịch vụ]. Phân tích ưu nhược điểm và đề xuất mô hình tối ưu cho thị trường mục tiêu."
+    },
+    {
+      "id": 36,
+      "title": "Market Entry Strategy",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Xây dựng chiến lược thâm nhập thị trường [tên thị trường mới] cho doanh nghiệp. Bao gồm: nghiên cứu thị trường, rủi ro và kế hoạch triển khai."
+    },
+    {
+      "id": 37,
+      "title": "Digital Transformation Plan",
+      "category": "strategy",
+      "categoryName": "Chiến lược",
+      "text": "Xây dựng lộ trình chuyển đổi số cho doanh nghiệp [loại hình]. Bao gồm: đánh giá hiện trạng, công nghệ cần áp dụng và kế hoạch triển khai."
+    },
+    {
+      "id": 38,
+      "title": "Trả Lời Khiếu Nại",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Viết template trả lời khiếu nại của khách hàng về [vấn đề]. Thể hiện sự đồng cảm, xin lỗi chân thành và đưa ra giải pháp cụ thể."
+    },
+    {
+      "id": 39,
+      "title": "FAQ Trang Web",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Tạo danh sách 20 câu hỏi thường gặp (FAQ) về [sản phẩm/dịch vụ]. Mỗi câu hỏi có câu trả lời rõ ràng, súc tích và hữu ích."
+    },
+    {
+      "id": 40,
+      "title": "Chatbot Script",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Thiết kế kịch bản chatbot cho website bán [sản phẩm]. Bao gồm: lời chào, các câu hỏi phổ biến và cách chuyển sang nhân viên hỗ trợ."
+    },
+    {
+      "id": 41,
+      "title": "Email Cảm Ơn Khách Hàng",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Viết email cảm ơn khách hàng sau khi họ mua hàng/sử dụng dịch vụ. Thể hiện sự trân trọng và khuyến khích feedback/review."
+    },
+    {
+      "id": 42,
+      "title": "Customer Satisfaction Survey",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Thiết kế bảng khảo sát mức độ hài lòng của khách hàng về [sản phẩm/dịch vụ]. Bao gồm 15 câu hỏi đo lường các khía cạnh khác nhau."
+    },
+    {
+      "id": 43,
+      "title": "Customer Retention Program",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Đề xuất chương trình giữ chân khách hàng cho [loại hình kinh doanh]. Bao gồm: loyalty program, incentives và communication plan."
+    },
+    {
+      "id": 44,
+      "title": "Win-back Campaign",
+      "category": "customer-service",
+      "categoryName": "Chăm sóc KH",
+      "text": "Tạo chiến dịch email để thu hút lại khách hàng đã ngừng sử dụng sản phẩm/dịch vụ. Bao gồm: 3 email với thông điệp và offer hấp dẫn."
+    },
+    {
+      "id": 45,
+      "title": "Job Description",
+      "category": "hr",
+      "categoryName": "Nhân sự",
+      "text": "Viết job description chi tiết cho vị trí [tên vị trí]. Bao gồm: trách nhiệm công việc, yêu cầu, quyền lợi và văn hóa công ty."
+    },
+    {
+      "id": 46,
+      "title": "Câu Hỏi Phỏng Vấn",
+      "category": "hr",
+      "categoryName": "Nhân sự",
+      "text": "Tạo 30 câu hỏi phỏng vấn cho vị trí [tên vị trí]. Bao gồm câu hỏi về kỹ năng chuyên môn, tình huống và văn hóa phù hợp."
+    },
+    {
+      "id": 47,
+      "title": "Onboarding Plan",
+      "category": "hr",
+      "categoryName": "Nhân sự",
+      "text": "Xây dựng kế hoạch onboarding 90 ngày cho nhân viên mới vị trí [tên vị trí]. Bao gồm mục tiêu từng giai đoạn và checklist cụ thể."
+    },
+    {
+      "id": 48,
+      "title": "Performance Review Template",
+      "category": "hr",
+      "categoryName": "Nhân sự",
+      "text": "Tạo template đánh giá hiệu suất làm việc cho [vị trí/phòng ban]. Bao gồm: tiêu chí đánh giá, thang điểm và phần feedback chi tiết."
+    },
+    {
+      "id": 49,
+      "title": "Team Building Activities",
+      "category": "hr",
+      "categoryName": "Nhân sự",
+      "text": "Đề xuất 15 hoạt động team building cho đội ngũ [số lượng người]. Mục tiêu: tăng gắn kết, cải thiện communication và xây dựng văn hóa."
+    },
+    {
+      "id": 50,
+      "title": "Training Program",
+      "category": "hr",
+      "categoryName": "Nhân sự",
+      "text": "Thiết kế chương trình đào tạo về [kỹ năng/kiến thức] cho nhân viên. Bao gồm: nội dung, phương pháp, timeline và cách đánh giá hiệu quả."
+    }
+  ]
+}
